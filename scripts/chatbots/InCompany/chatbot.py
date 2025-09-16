@@ -15,16 +15,22 @@ if project_root not in sys.path:
 
 
 from scripts.langChainTools.query import run_mysql_query
+from scripts.langChainTools.audioTool import generate_and_save_audio
 
 load_dotenv()
+
+
+# Define the tools available to the model
+# The tools are the methods decorated with @tool from the imported classes
+tools = [run_mysql_query, generate_and_save_audio]
+
 
 
 model = ChatGoogleGenerativeAI(model="models/gemini-2.5-flash", 
                                temperature=0, 
                                google_api_key=os.getenv("API_KEY"))
 
-# Define the tools available to the model
-tools = [run_mysql_query]
+
 
 # Create a prompt template for the model
 prompt = ChatPromptTemplate.from_messages(

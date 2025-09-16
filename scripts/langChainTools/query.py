@@ -15,6 +15,7 @@ DB_CONFIG = {
     "database": os.getenv("DB_NAME")
 }
 
+
 @tool
 def run_mysql_query(query: str) -> str:
     """
