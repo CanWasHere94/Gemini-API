@@ -1,0 +1,5 @@
+google-generativeai
+jupyterlab
+python-dotenv
+langchain-google-genai
+mysql-connector-python
