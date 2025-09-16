@@ -19,10 +19,10 @@ DB_CONFIG = {
 def run_mysql_query(query: str) -> str:
     """
     Executes a read-only SQL query against the MySQL database and returns a summary.
-    This tool should only be used for SELECT queries to retrieve data.
+    This tool should only be used for SELECT and DESCRIBE queries to retrieve data.
     """
-    if not query.lower().strip().startswith("select"):
-        return "Only SELECT queries are allowed."
+    if not query.lower().strip().startswith(("select", "describe")):
+        return "Only SELECT and DESCRIBE queries are allowed."
 
     try:
         conn = mysql.connector.connect(**DB_CONFIG)

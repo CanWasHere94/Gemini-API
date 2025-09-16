@@ -31,7 +31,7 @@ prompt = ChatPromptTemplate.from_messages(
     [
         ("system", """You are a helpful assistant that answers user questions by using a database.
          Your job is to use the provided tools to retrieve information from the database and provide a clear answer.
-         You must use accurate table and column names in your queries.
+         You must use accurate table and column names in your queries. You should start with describe in order to find right structre of DB.
          """),
         ("human", "{input}"),
         ("placeholder", "{agent_scratchpad}")
