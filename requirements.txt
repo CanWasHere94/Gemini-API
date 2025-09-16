@@ -2,4 +2,5 @@ google-generativeai
 jupyterlab
 python-dotenv
 langchain-google-genai
+google-genai
 mysql-connector-python

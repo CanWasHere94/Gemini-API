@@ -10,4 +10,4 @@ GeminiContentModSQLrows.py for content list from SQL and moderation. It returns 
 
 GeminiContentTranslatorBasicUserInput.py Gemini for translation.
 
-chatbot.py for tool use and langchain.
+chatbot.py for tool use and langchain. See it's readme.
