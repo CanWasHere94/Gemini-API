@@ -10,4 +10,8 @@ GeminiContentModSQLrows.py for content list from SQL and moderation. It returns 
 
 GeminiContentTranslatorBasicUserInput.py Gemini for translation.
 
+GeminiSimpleAudio.py for simple audio output.
+
+ImageGenerator.py for simple image output.
+
 chatbot.py for tool use and langchain. See it's readme.
